@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: yellow;
+}
+
+nav {
+    height: 70px;
+    background-color: transparent;
+}
+
+.nav-items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.nav-items-first-part a {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Sigmar", sans-serif;
+    color: cyan;
+    text-transform: uppercase;
+}
+
+
+.nav-items-second-part a {
+    padding:2px 10px;
+    color: white;
+    font-size: 18px;
+    transition: all .3s;
+    transition: border-bottom .1s;
+}
+
+.nav-items-second-part .active{
+    color: cyan;
+    font-weight: bold;
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan;
+}
+
+.nav-items-second-part a:hover {
+    color: cyan;
+    font-weight: bold;
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: cyan;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 896px) {
+
+    nav {
+        min-height: 70px;
+        background-color: transparent;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    
+
+    .nav-items-second-part {
+        display: none;
+    }
+
+    .nav-items-first-part.hidden{
+        display: none; 
+    }
+
+    .nav-items-second-part.active {
+        display: flex; 
+        flex-direction: column;
+        background-color: black;
+        height: 150px;
+        margin-top: 100px;
+        z-index: 1;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-items-second-part a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main-container {
+    width: 897px;
+    margin: 50px auto;
+    background-color:rgba(0, 0, 0, 0.7);
+    color: #E0E0E0;
+    border-radius: 5px;
+    border: 2px solid cyan;
+    padding: 20px;
+}
+
+.main-container h1 {
+    text-transform: uppercase;
+    color: #00AEEF;
+    font-family: "Sigmar", sans-serif;
+    letter-spacing: 2px;
+}
+
+.top-part {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-part .name {
+    font-family: "Sigmar", sans-serif;
+    letter-spacing: 2px;
+    color: #00AEEF;
+}
+
+.personal-info {
+    margin-bottom: 10px;
+}
+
+.personal-info i {
+    color: #00AEEF;
+    font-size: 20px;
+}
+
+.professional-summary, .education, .work-experience {
+    padding-bottom: 10px;
+    border-bottom: 2px solid cyan;
+}
+
+.skill {
+    display: flex; 
+}
+
+.skill p {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.skill .box {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html, .css {
+   background: linear-gradient(to right, cyan 90%, transparent 10%);
+   color: black;
+}
+
+.javascript {
+    background: linear-gradient(to right, cyan 70%, transparent 50%);
+    color: black;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+@media (max-width: 896px) {
+    .main-container {
+        max-width: 897px;
+        width: 100%;
+        margin: 50px auto;
+        background-color:rgba(0, 0, 0, 0.7);
+        color: #E0E0E0;
+        border-radius: 5px;
+        border: 2px solid cyan;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
